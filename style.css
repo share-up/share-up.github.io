@@ -1,0 +1,22 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(./img/maintenence_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.header .maintenence {
+    color: aliceblue;
+    font-weight: 150;
+}
+
+.doWelldoGood {
+    font-weight: bolder;
+}

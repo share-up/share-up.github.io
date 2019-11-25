@@ -8,15 +8,50 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.500);
     background-blend-mode: darken;
 }
 
 .header .maintenence {
     color: aliceblue;
     font-weight: 150;
+    font-size: 2rem;
 }
 
 .doWelldoGood {
     font-weight: bolder;
+    font-size: 15vw;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.left-side {
+    text-align: center;
+}
+
+.h-50-30 {
+    height: 40%;
+}
+
+@media screen and (min-width: 1000px) {
+    .right-side {
+        text-align: right;
+    }
+    .left-side {
+        text-align: left;
+    }
+    .doWelldoGood {
+        font-weight: bolder;
+        font-size: 7vw;
+        text-align: center;
+        align-self: center;
+    }
+    .h-50-30 {
+        height: 50%;
+    }
+    .maintenence {
+        font-size: 2.5rem!important;
+    }
 }

@@ -20,7 +20,6 @@ address:
 
 
 #copyright
-copyright:
-  - description: Designed by
-  - name: Diogo Valente
-  - url: https://www.linkedin.com/in/diogovalentepolonia/
+copyright_description: Designed by
+copyright_name: Diogo Valente
+copyright_url: https://www.linkedin.com/in/diogovalentepolonia/

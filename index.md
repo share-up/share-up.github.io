@@ -1,6 +1,7 @@
 ---
-layout: default
-title: "Maintenence"
+layout: index
+title: "Welcome"
+header: Welcome to ShARE UP
+about: ShARE is a consultancy for students
 ---
 
-Our website is under construction. We'll be here soon with our new site!

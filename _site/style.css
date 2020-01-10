@@ -69,10 +69,6 @@
     visibility: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

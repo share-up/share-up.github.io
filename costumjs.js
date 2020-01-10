@@ -38,3 +38,11 @@ $(window).resize(function() {
 $(window).ready(function() {
     if (window.innerWidth <= 1000) $('.text-header').removeClass(' display-1');
 });
+
+$(window).on("load", function() {
+    setTimeout(loaderFade, 500);
+
+    function loaderFade() {
+        $('.loader-wrapper').fadeOut("slow");
+    }
+});

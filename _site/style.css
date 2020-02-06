@@ -1,5 +1,8 @@
-/* insert root colors
- */
+/* insert root colors */
+
+:root {
+    --color-primary: rgb(0, 203, 131);
+}
 
 .loader-wrapper {
     width: 100%;
@@ -218,13 +221,38 @@ i:hover {
 }
 
 .card-img {
-    max-width: 125px;
+    max-width: 100px;
     height: auto;
     margin-top: 10px;
 }
 
 
 /* End Students */
+
+
+/* Scopes */
+
+.card.scopes {
+    min-height: 220px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out
+}
+
+.card.scopes:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-transform: scale(1.05, 1.05);
+    /* Firefox 3.5 - 3.6 */
+    transform: scale(1.05, 1.05);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.border-share {
+    border-color: var(--color-primary);
+}
+
+
+/* End Scopes */
 
 footer {
     padding: 25px 0;

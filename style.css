@@ -254,6 +254,9 @@ i:hover {
 
 /* End Scopes */
 
+
+/* Footer */
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -262,12 +265,6 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: {
-        {
-            site.data.template.font.primary
-        }
-    }
-    ;
     line-height: 40px;
 }
 
@@ -275,12 +272,6 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: {
-        {
-            site.data.template.font.primary
-        }
-    }
-    ;
     line-height: 40px;
 }
 
@@ -309,6 +300,9 @@ ul.social-buttons li a:active {
     background-color: green
     /* #{{ site.data.template.color.primary } */
 }
+
+
+/* footer */
 
 .slide_container {
     position: relative;

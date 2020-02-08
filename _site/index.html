@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/ShARE-UP/css/bootstrap.css">
 
     <!-- Costum CSS -->
     <!--     <link rel="stylesheet" href="/ShARE-UP/assets/css/main.css">   -->
-    <link rel="stylesheet" href="/ShARE-UP/style.css">
+    <link rel="stylesheet" href="/ShARE-UP/css/style.css">
 
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,18 +23,16 @@
 
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/ShARE-UP/costumjs.js"></script>
+    <script src="/ShARE-UP/js/bootstrap.js"></script>
+    <script src="/ShARE-UP/js/costumjs.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-top">
 
     <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
-</div> <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark navbar-inverse">
+</div> <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark navbar-inverse" id="nav-top">
     <a class="navbar-brand" href="#">
         <img src="/ShARE-UP/img/share-up_logo.png" width="100px" height="34px" class="d-inline-block align-top" alt="">
     </a>
@@ -44,13 +42,22 @@
 
     <div class="collapse navbar-collapse" id="MyNavbar">
         <ul class="navbar-nav mr-auto">
-            <!--  <li class="nav-item disabled">
+            <!--              <li class="nav-item disabled">
                 <a class="nav-link disabled" href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Students <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item ">
+                <a class="nav-link " href="#about">About</a>
             </li>
-            <li class="nav-item disabled">
-                <a class="nav-link disabled" href="#">Corporates</a>
+            <li class="nav-item ">
+                <a class="nav-link " href="#students">Students</a>
             </li>
-            <li class="nav-item disabled">
+            <li class="nav-item ">
+                <a class="nav-link " href="#scopes">Services</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="#contact">Contact</a>
+            </li>
+            <!--             <li class="nav-item disabled">
                 <a class="nav-link disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Portfolio
                 </a>
@@ -65,7 +72,7 @@
                 <a class="nav-link disabled" href="#">News</a>
             </li>  -->
         </ul>
-        <a class="nav-link " href="https://www.share-share.org/"><button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Global</button></a>
+        <a class="nav-link " href="https://www.share-share.org/"><button class="btn btn-outline-success my-2 my-sm-0" id="nav-global" type="submit">Global</button></a>
 
 
         <!-- 
@@ -76,9 +83,11 @@
  -->
     </div>
 
-</nav> <nav class="navbar navbar-light bg-light">
-    <span class="navbar-text navbar-center">Our website is under maintencence. Some features are not available. We'll be here soon with our new features!</span>
-</nav> <section class="container-fluid header d-flex flex-column">
+</nav> <a href="#recruitment">
+    <nav class="navbar navbar-light bg-share">
+        <h5 class="navbar-text navbar-center text-light"><i class="fas fa-bullhorn"></i> <span></span> We are recruiting again! Check it out! <span></span> <i class="fas fa-mouse-pointer"></i></h5>
+    </nav>
+</a> <section class="container-fluid header d-flex flex-column">
     <div class="row">
         <div class="col offset-md-1">
             <h1 class="text-emphasys text-white text-header display-1">We learn</h1>
@@ -169,37 +178,37 @@
         <!-- delete card settings if not used -->
         <div class="row">
             <div class="col-lg-4">
-                <img src="/ShARE-UP/img/student/dowelldogood.png" class="card-img mx-auto" alt="...">
+                <img src="/ShARE-UP/img/student/dowelldogood.png" class="students-img mx-auto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Do Well Do Good</h5>
                     <p class="card-text">Through excellence and professionalism, we collaborate on solving major societal issues and on cases to transform companies</p>
                 </div>
             </div>
             <div class="col-lg-4 box-sahdow">
-                <img src="/ShARE-UP/img/student/leadership.png" class="card-img mx-auto" alt="...">
+                <img src="/ShARE-UP/img/student/leadership.png" class="students-img mx-auto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Leadership</h5>
                     <p class="card-text">ShARE is structured to improve the students’ ability to take initiatives and develop an entrepreneurial spirit</p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <img src="/ShARE-UP/img/student/global.png" class="card-img mx-auto" alt="...">
+                <img src="/ShARE-UP/img/student/global.png" class="students-img mx-auto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Global Mindset</h5>
-                    <p class="card-text">Our members are integrated in a global network, enabling us to work with international teams to develop projects. The events we locally organize have a global</p>
+                    <p class="card-text">Our members are integrated in a global network, enabling us to work with international teams to develop projects. The events we locally organize have a global impact</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 offset-lg-2">
-                <img src="/ShARE-UP/img/student/shareknowledge.png" class="card-img mx-auto" alt="...">
+                <img src="/ShARE-UP/img/student/shareknowledge.png" class="students-img mx-auto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Knowledge Sharing</h5>
                     <p class="card-text">We promote discussion and critical thinking inside our organization. All our meetings and presentations </p>
                 </div>
             </div>
             <div class="col-lg-4">
-                <img src="/ShARE-UP/img/student/consultancy.png" class="card-img mx-auto" alt="...">
+                <img src="/ShARE-UP/img/student/consultancy.png" class="students-img mx-auto" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Consultancy Skills</h5>
                     <p class="card-text">ShARE students acquire top corporate skills through training and real life projects with start-ups, companies, and NGOs </p>
@@ -223,7 +232,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="card students">
-                    <img src="/ShARE-UP/img/student/dowelldogood.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/student/dowelldogood.png" class="students-img mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Do Well Do Good</h5>
                         <p class="card-text">Through excellence and professionalism, we collaborate on solving major societal issues and on cases to transform companies</p>
@@ -232,7 +241,7 @@
             </div>
             <div class="col-lg-4 box-sahdow">
                 <div class="card students">
-                    <img src="/ShARE-UP/img/student/leadership.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/student/leadership.png" class="students-img mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Leadership</h5>
                         <p class="card-text">ShARE is structured to improve the students’ ability to take initiatives and develop an entrepreneurial spirit</p>
@@ -241,7 +250,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card students">
-                    <img src="/ShARE-UP/img/student/global.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/student/global.png" class="students-img mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Global Mindset</h5>
                         <p class="card-text">Our members are integrated in a global network, enabling us to work with international teams to develop projects. The events we locally organize have a global</p>
@@ -252,7 +261,7 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-2">
                 <div class="card students">
-                    <img src="/ShARE-UP/img/student/shareknowledge.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/student/shareknowledge.png" class="students-img mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Knowledge Sharing</h5>
                         <p class="card-text">We promote discussion and critical thinking inside our organization. All our meetings and presentations </p>
@@ -261,7 +270,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card students">
-                    <img src="/ShARE-UP/img/student/consultancy.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/student/consultancy.png" class="students-img mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Consultancy Skills</h5>
                         <p class="card-text">ShARE students acquire top corporate skills through training and real life projects with start-ups, companies, and NGOs </p>
@@ -279,51 +288,52 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <!-- Cards -->
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-businessModel">
-                    <img src="/ShARE-UP/img/scopes/businessModel.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/businessModel.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Business Model</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 ">
+            <div class="col-md-4 ">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-expansionPlan">
-                    <img src="/ShARE-UP/img/scopes/expansionPlan.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/expansionPlan.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Expansion Plan</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-partnershipPlan">
-                    <img src="/ShARE-UP/img/scopes/partnershipPlan.png" class="card-img mx-auto" alt="...">
-                    <div class="card-body d-flex">
-                        <h5 class="card-title align-self-center w-100">Partnership Plan</h5>
+                    <img src="/ShARE-UP/img/scopes/partnershipPlan.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title ">Partnership Plan</h5>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-marketingPlan">
-                    <img src="/ShARE-UP/img/scopes/marketingPlan.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/marketingPlan.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Marketing Plan</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-societalIssue">
-                    <img src="/ShARE-UP/img/scopes/societalIssue.png" class="card-img mx-auto" alt="...">
-                    <div class="card-body d-flex">
-                        <h5 class="card-title align-self-center w-100">Societal Issue</h5>
+                    <img src="/ShARE-UP/img/scopes/societalIssue.png" class="card-img-top mx-auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title ">Societal Issue</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-financialAnalysis">
-                    <img src="/ShARE-UP/img/scopes/financialAnalysis.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/financialAnalysis.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Financial Analysis</h5>
                     </div>
@@ -331,29 +341,35 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-supplyChain">
-                    <img src="/ShARE-UP/img/scopes/supplyChain.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/supplyChain.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Supply Chain</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-globalDataCollection">
-                    <img src="/ShARE-UP/img/scopes/globalDataCollection.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/globalDataCollection.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Global Data Colecction</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-businessLaunching">
-                    <img src="/ShARE-UP/img/scopes/businessLaunching.png" class="card-img mx-auto" alt="...">
+                    <img src="/ShARE-UP/img/scopes/businessLaunching.png" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Business Launching</h5>
                     </div>
                 </div>
+            </div>
+            <!-- Cards -->
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="https://forms.gle/ch9UnTtmuCTJCPKz9" target="_blank" class="btn btn-share mt-4 p-2">Apply for ShARE projects!</a>
             </div>
         </div>
     </div>
@@ -371,7 +387,7 @@
                 </div>
                 <div class="modal-body">Get market insights, work on unsolved issues, and take your business to the next level </div>
                 <div class="modal-footer">
-                    <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                    <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary">Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -388,7 +404,7 @@
             </div>
             <div class="modal-body">Study with us the possibility of an expansion </div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -405,7 +421,7 @@
             </div>
             <div class="modal-body">Get an innovative perspective on your partnerships plan</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -422,7 +438,7 @@
             </div>
             <div class="modal-body">Boost your business with a solid communication with your clients and stakeholders</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -439,7 +455,7 @@
             </div>
             <div class="modal-body">ShARE can help you having more success in your mission</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -456,7 +472,7 @@
             </div>
             <div class="modal-body">Looking for a financial study on strategic plan or for financial sustainability?</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -473,7 +489,7 @@
             </div>
             <div class="modal-body">Further develop and optimize your processes and logistics!</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -490,7 +506,7 @@
             </div>
             <div class="modal-body">ShARE is present in 15 countries and is able to manage cross country project</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
@@ -507,11 +523,72 @@
             </div>
             <div class="modal-body">We can help you turning your innovative ideas into reality</div>
             <div class="modal-footer">
-                <a href="#contact" type="button" class="btn btn-secondary" data-dismiss="modal">Let's Meet!<a>
+                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
             </div>
         </div>
     </div>
 </div>
+</section> <section id="recruitment">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2 class="section-heading text-share">ShARE Recruitment</h2>
+                <h3 class="section-subheading text-muted">We’re recruiting U.PORTO students, aged under 25, with 3 semesters left in Faculty</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card recruitment">
+                    <img class="card-img-top p-1" src="/ShARE-UP/img/recruitment/online.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-share">Online Applications</h5>
+                        <p class="card-text">Fill in our inscription form and submit your CV. We will analyse your profile and giveo some feedback!</p>
+                        <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> 10 to 23rd of February</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card recruitment">
+                    <img class="card-img-top p-1 " src="/ShARE-UP/img/recruitment/groupDynamics.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-share">Group Dynamics</h5>
+                        <p class="card-text">This is the 2nd fase os recruitment. You will have to discuss and work with other candidates!</p>
+                        <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> 24 to 27th of February</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card recruitment">
+                    <img class="card-img-top p-1" src="/ShARE-UP/img/recruitment/interview.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-share">Interview</h5>
+                        <p class="card-text">After you're approved on the group dynamics, there's a simple interview so we can learn more about you!</p>
+                        <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> 2 to 6th of March</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card recruitment">
+                    <img class="card-img-top p-1" src="/ShARE-UP/img/recruitment/retreat.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-share">Final Retreat</h5>
+                        <p class="card-text">This is the last fase! You have to make sure you are available for this very special day.</p>
+                        <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt"></i> 7th March 2020</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 my-auto text-muted">
+                <h1>Let's learn together!</h1>
+                <p>Become a ShARE member this semester</p>
+                <a href=" https://forms.gle/72FJn6uQhEhggKDw6 " target="_blank " class=" btn btn-lg btn-share mt-4 ">Apply Now!</a>
+            </div>
+            <div class="col-md-6 pt-3 ">
+                <img src="/ShARE-UP/img/recruitment/applyNow.png " class="img-fluid applyNow " alt="Responsive image ">
+            </div>
+        </div>
+    </div>
 </section> <section id="contact">
     <div class="container">
         <div class="row">
@@ -523,7 +600,7 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHZQko8WLhWu9MEPCPnYXALMBGEJL4bdJ0nZjdxqXVc0c0Ew/viewform?embedded=true" width="100%" height="796" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-</section> <!-- <footer>
+</section> <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -542,16 +619,16 @@
                     </li>
                 </ul>
             </div>
-                        <div class="col-md-4">
+            <!--             <div class="col-md-4">
                 <ul class="list-inline quicklinks text-muted">
                     <li class="list-inline-item">Designed by
                     </li>
                     <li class="list-inline-item"><a class="text-muted" href="https://www.linkedin.com/in/diogovalentepolonia/">Diogo Valente</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
-</footer> -->
+</footer>
 </body>
 
 </html>

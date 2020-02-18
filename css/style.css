@@ -35,6 +35,9 @@ a {
 
 /* Common */
 
+
+/* Loader */
+
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -101,6 +104,9 @@ a {
         height: 0%;
     }
 }
+
+
+/* Loader */
 
 .hidden {
     visibility: hidden;

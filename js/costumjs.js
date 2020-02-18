@@ -39,7 +39,7 @@ $(window).ready(function() {
 });
 
 $(window).on("load", function() {
-    setTimeout(loaderFade, 500);
+    setTimeout(loaderFade, 200);
 
     function loaderFade() {
         $('.loader-wrapper').fadeOut("slow");

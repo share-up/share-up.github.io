@@ -30,42 +30,40 @@ markdown: kramdown
 permalink: pretty
 
 
+collections:
+  board:
 
-#board
-board:
-- name: Alexandra Leite
-  img:  AlexandraLeite.png
-  position: Internal Vice-President
-  slogan: Best at motivationg the team!
-  age: 21
-  faculty: FEP
-  course: Economics
-  network: Business Strategy
-  linkedin: https://www.linkedin.com/in/alexandra-leite-557184164/
-- name: João Matos
-  img:  JoaoMatos.png
-  position: President
-  slogan: Best at making things happen!
-  age: 20
-  faculty: FEUP
-  course: BioEng.
-  network: ICT
-  linkedin: https://www.linkedin.com/in/joao-mat0s/
-- name: Carina Lopes
-  img:  CarinaLopes.png
-  position: External Vice-President
-  slogan: Best at spamming social media!
-  age: 20
-  faculty: FLUP
-  course: Com. Sciences
-  network: Industry
-  linkedin: https://www.linkedin.com/in/carinateixeiralopes/
-- name: Guilherme Guimarães
-  img:  GuilhermeGuimaraes.png
-  position: Treasurer
-  slogan: Best at avoiding bankruptcy!
-  age: 21
-  faculty: FEP
-  course: Economics
-  network: Global Economics
-  linkedin: https://www.linkedin.com/in/guilhermedqg/
+
+
+#networks
+networks:
+- name: Energy
+  img: EN
+  icon: fas fa-lightbulb
+  id: energy
+  description: Solar, Wind, Biomass, Renewable Energy, Global Agencies & International Policies, Nuclear, CO2 Emission, Grid, Transmission & Distribution, Coal Energy, Environment, Hydropower
+- name: Industry
+  img: IND
+  icon: fas fa-industry
+  id: industry
+  description: Logistics & Supply Chain, Lean Management, Manufacturing Processes, Quality Management, Heavy Industry, Industrial Policies, Machinery, Infrastructure
+- name: Business Strategy
+  img: BS
+  icon: fas fa-briefcase
+  id: business
+  description: Marketing, Mergers & Acquisition , Human Resources , Strategy & Planning , Expansion, Organisation , Operational Effectiveness , Pricing
+- name: Global Economics
+  img: GE
+  icon: fas fa-euro-sign
+  id: economics
+  description: Poverty Lines & HDI, Agriculture & Development, Economic Growth, Inequality, Unemployment, Disability, Youth, Elders, Happiness, Social Business, Macroeconomic models, Macroeconomic Crisis, Public Economics, Education, Trade, Monetary Policies, Fiscal Policies, Globalization & Development, Microfinance, Health
+- name: ICT
+  img: ICT
+  icon: fas fa-mouse-pointer
+  id: ict
+  description: Telecom Networks, IT Industry , Software Industry , Internet Industry , Rural ICT, Social Networks, Telecom Vendors , Venture Capital & Innovation Funds , R&D Models , Social Entrepreneurship , Government Policies, Intellectual Property Rights, Entrepreneurs Sociology , Scientific Parks & Incubators , Universities
+- name: Mobility
+  img: MOB
+  icon: fas fa-paper-plane
+  id: mobility
+  description: Urban Logistics, Sustainable Logistics, Electric Mobility, Autonomous Driving, Public Transit, Mobility Policies, Walking and cycling, Shared Mobility, Traffic management, Infrastructure,Safety

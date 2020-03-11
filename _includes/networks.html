@@ -1,0 +1,58 @@
+<section class="text-center bg-dark" id="networks">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Section heading -->
+                <h1 class="section-heading text-share">Networks</h1>
+                <!-- Section description -->
+                <h3 class="section-subheading text-light">The rest of the members work in one of these 6 different networks</h3>
+            </div>
+        </div>
+        <!-- Grid row -->
+        <div class="row text-center">
+            <!-- Grid column -->
+            {% for network in site.networks %}
+            <div class="col-lg-4 col-md-6 col-sm-6" data-toggle="modal" data-target="#{{network.id}}">
+                <div class="card netwrok-card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-3 bg-white align-self-center">
+                            <i class="{{network.icon}} fa-2x text-share"></i>
+                        </div>
+                        <div class=" col-9 bg-dark-light netwrok-card-body">
+                            <div class="card-body">
+                                <h5 class="card-title network-title my-auto font-weight-normal">{{network.name}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+
+    {% for network in site.networks %}
+    <!-- modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="{{network.id}}">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{network.name}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    {{network.description}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+<!-- Section: Team-->

@@ -23,3 +23,49 @@ address:
 copyright_description: Designed by
 copyright_name: Diogo Valente
 copyright_url: https://www.linkedin.com/in/diogovalentepolonia/
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+
+#board
+board:
+- name: Alexandra Leite
+  img:  AlexandraLeite.png
+  position: Internal Vice-President
+  slogan: Best at motivationg the team!
+  age: 21
+  faculty: FEP
+  course: Economics
+  network: Business Strategy
+  linkedin: https://www.linkedin.com/in/alexandra-leite-557184164/
+- name: João Matos
+  img:  JoaoMatos.png
+  position: President
+  slogan: Best at making things happen!
+  age: 20
+  faculty: FEUP
+  course: BioEng.
+  network: ICT
+  linkedin: https://www.linkedin.com/in/joao-mat0s/
+- name: Carina Lopes
+  img:  CarinaLopes.png
+  position: External Vice-President
+  slogan: Best at spamming social media!
+  age: 20
+  faculty: FLUP
+  course: Com. Sciences
+  network: Industry
+  linkedin: https://www.linkedin.com/in/carinateixeiralopes/
+- name: Guilherme Guimarães
+  img:  GuilhermeGuimaraes.png
+  position: Treasurer
+  slogan: Best at avoiding bankruptcy!
+  age: 21
+  faculty: FEP
+  course: Economics
+  network: Global Economics
+  linkedin: https://www.linkedin.com/in/guilhermedqg/

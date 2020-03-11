@@ -1,5 +1,4 @@
-<!-- Section: Team  -->
-<section class="team-section text-center" id="team">
+<section class="team-section text-center bg-light" id="team">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -11,105 +10,75 @@
         </div>
         <!-- Grid row -->
         <div class="row text-center">
+            {% for boardie in site.board %}
             <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-5">
-                <div class="avatar mx-auto">
-                    <img src="../img/board/AlexandraLeite.png" class="img-fluid rounded img-board" alt="Sample avatar">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="team-single ">
+                    <div class="content-area">
+                        <div class="side-one">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="img-area">
+                                        <img src="../img/board/{{boardie.img}}" class="img-fluid " alt="Board_Member">
+                                    </div>
+                                    <h5 class="text-dark font-weight-bold my-4">{{boardie.name}}</h5>
+                                    <h6 class="text-muted font-italic mb-3">{{boardie.position}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side-two">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h5 class="text-dark font-weight-bold my-2">{{boardie.name}}</h5>
+                                    <p class="text-muted font-italic">{{boardie.slogan}}</p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-muted">Age:</p>
+                                        </div>
+                                        <div class="col-6" align="left">
+                                            <p class="text-muted">{{boardie.age}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-muted">Faculty:</p>
+                                        </div>
+                                        <div class="col-6" align="left">
+                                            <p class="text-muted">{{boardie.faculty}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-muted">Course:</p>
+                                        </div>
+                                        <div class="col-6" align="left">
+                                            <p class="text-muted">{{boardie.course}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-muted">Network:</p>
+                                        </div>
+                                        <div class="col-6" align="left">
+                                            <p class="text-muted">{{boardie.network}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer  ">
+                                    <!--Linkedin -->
+                                    <a type="button" target="_blank" href="{{boardie.linkedin}}" class="board-social  btn-floating">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h4 class="text-dark font-weight-bold dark-grey-text my-4">Alexandra Leite</h4>
-                <h6 class="text-muted text-uppercase grey-text mb-3"><strong>Internal Vice-President</strong></h6>
-                <!--Linkedin -->
-                <a type="button" target="_blank" href="https://www.linkedin.com/in/alexandra-leite-557184164/" class="board-social  btn-floating btn-sm mx-1 mb-0 btn-li">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!-- Facebook-->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
-                    <i class="fab fa-facebook-f"></i>
-                </a> -->
-                <!--Dribbble -->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-dribbble">
-                    <i class="fab fa-dribbble"></i>
-                </a> -->
-                <!-- Twitter -->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw">
-                    <i class="fab fa-twitter"></i>
-                </a> -->
             </div>
             <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-5">
-                <div class="avatar mx-auto">
-                    <img src="../img/board/JoaoMatos.png" class="img-fluid rounded img-board" alt="Sample avatar">
-                </div>
-                <h4 class="text-dark font-weight-bold dark-grey-text my-4">João Matos</h4>
-                <h6 class="text-muted text-uppercase grey-text mb-3"><strong>President</strong></h6>
-                <!-- Linkedin -->
-                <a type="button" target="_blank" href="https://www.linkedin.com/in/joao-mat0s/" class="board-social btn-floating btn-sm mx-1 mb-0 btn-li">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!--Email-->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-email">
-                    <i class="fas fa-envelope"></i>
-                </a> -->
-                <!-- Facebook-->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-fb">
-                    <i class="fab fa-facebook-f"></i>
-                </a> -->
-                <!-- GitHub-->
-                <!--                 <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-git">
-                    <i class="fab fa-github"></i>
-                </a> -->
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-5">
-                <div class="avatar mx-auto">
-                    <img src="../img/board/CarinaLopes.png" class=" img-fluid rounded img-board" alt="Sample avatar">
-                </div>
-                <h4 class="text-dark font-weight-bold dark-grey-text my-4">Carina Lopes</h4>
-                <h6 class="text-muted text-uppercase grey-text mb-3"><strong>External Vice-President</strong></h6>
-                <!--Linkedin -->
-                <a type="button" target="_blank" href="https://www.linkedin.com/in/carinateixeiralopes/" class="board-social btn-floating btn-sm mx-1 mb-0 btn-li">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!--                Twitter
-                <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw">
-                    <i class="fab fa-twitter "></i>
-                </a>
-                Pinterest 
-                <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-pin">
-                    <i class="fab fa-pinterest "></i>
-                </a> -->
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-5">
-                <div class="avatar mx-auto">
-                    <img src="../img/board/GuilhermeGuimaraes.png" class="img-fluid rounded img-board" alt="Sample avatar">
-                </div>
-                <h4 class="text-dark font-weight-bold dark-grey-text my-4">Guilherme Guimarães</h4>
-                <h6 class="text-muted text-uppercase grey-text mb-3"><strong>Treasurer</strong></h6>
-                <!--Linkedin -->
-                <a type="button" target="_blank" href="https://www.linkedin.com/in/guilhermedqg/" class="board-social btn-floating btn-sm mx-1 mb-0 btn-li">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!--                Twitter
-                <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-tw">
-                    <i class="fab fa-twitter "></i>
-                </a>
-                Pinterest 
-                <a type="button" class="btn-floating btn-sm mx-1 mb-0 btn-pin">
-                    <i class="fab fa-pinterest "></i>
-                </a> -->
-            </div>
-            <!-- Grid column -->
-
+            {% endfor %}
         </div>
         <!-- Grid row -->
     </div>
 </section>
-<hr>
 <!-- Section: Team-->

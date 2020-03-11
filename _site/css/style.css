@@ -312,11 +312,12 @@ i:hover {
 
 .img-board {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    max-height: 250px;
+    width: auto;
 }
 
 .board-social {
     color: rgb(40, 103, 178);
-    min-width: 10px!important;
 }
 
 .board-social:hover {
@@ -324,7 +325,101 @@ i:hover {
 }
 
 
+/*
+flip card
+*/
+
+.card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    perspective: 1000px;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+
 /* End Team */
+
+
+/* BOARD */
+
+#team .card {
+    border: none;
+    background: #fff;
+}
+
+.img-area {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.team-single:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+
+.team-single:hover .side-one {
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    z-index: 2;
+    transform: rotateY(0deg);
+    margin-bottom: 30px;
+}
+
+.side-two {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+    min-height: 312px;
+}
+
+
+/* BOARD */
 
 
 /* Recruitment */

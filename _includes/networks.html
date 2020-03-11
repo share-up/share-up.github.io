@@ -38,17 +38,51 @@
     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="{{network.id}}">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{{network.name}}</h5>
+                <div class="modal-header bg-dark ">
+                    <i class="{{network.icon}} fa-lg text-share align-self-center"></i>
+                    <h5 class="modal-title font-weight-normal text-light ml-2 align-self-center">{{network.name}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                    {{network.description}}
+                    <div class="row my-3">
+                        <div class="col-sm-4 mt-2">
+                            <img src="../img/core/{{network.nm-img}}" alt="Network Manager" class="img-fluid nm mb-2">
+                            <p class="text-muted my-auto mx-auto">Network Manager</p>
+                            <!--Linkedin -->
+                            <a type="button" target="_blank" href="{{boardie.linkedin}}" class="board-social">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-8 align-self-center">
+                            <!--                             <div class="row">
+                                <div class="col">
+                                    <p class="tex-muted font-italic text-center">"{{network.nm-quote}}"</p>
+                                </div>
+                            </div> -->
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    {{network.description}}
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        {% for member in network.members %}
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <div class=" member-img-cropper mx-auto">
+                                <img src=" ../img/members/{{member.img}} " alt=" " class="member-img ">
+                            </div>
+                            <p class="text-muted mt-1 ">{{member.name}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
                 </div>
             </div>
         </div>

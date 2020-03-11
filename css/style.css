@@ -443,6 +443,42 @@ flip card
     background-color: white;
 }
 
+#networks .close {
+    color: #fff;
+    opacity: 1;
+}
+
+#networks .nm {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 150;
+    height: 150px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+}
+
+.member-img-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.member-img {
+    object-fit: cover;
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+
+.core-social {
+    color: rgb(40, 103, 178);
+}
+
+.core-social:hover {
+    color: rgb(40, 103, 178);
+}
+
 
 /* networks */
 

@@ -31,38 +31,16 @@
                                 <div class="card-body text-center mt-4">
                                     <h5 class="text-dark font-weight-bold my-2">{{boardie.name}}</h5>
                                     <p class="text-muted font-italic">{{boardie.slogan}}</p>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="text-muted">Age:</p>
+                                    {% for trait in boardie.traits %}
+                                    <div class="row p-0 m-0">
+                                        <div class="col-6 p-0 m-0">
+                                            <p class="text-muted">{{trait.name}}:</p>
                                         </div>
-                                        <div class="col-6" align="left">
-                                            <p class="text-muted">{{boardie.age}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="text-muted">Faculty:</p>
-                                        </div>
-                                        <div class="col-6" align="left">
-                                            <p class="text-muted">{{boardie.faculty}}</p>
+                                        <div class="col-6 p-0 m-0" align="left">
+                                            <p class="text-muted">{{trait.value}}</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="text-muted">Course:</p>
-                                        </div>
-                                        <div class="col-6" align="left">
-                                            <p class="text-muted">{{boardie.course}}</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="text-muted">Network:</p>
-                                        </div>
-                                        <div class="col-6" align="left">
-                                            <p class="text-muted">{{boardie.network}}</p>
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                                 <div class="card-footer bg-light ">
                                     <!--Linkedin -->

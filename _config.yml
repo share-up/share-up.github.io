@@ -57,7 +57,7 @@ networks:
   icon: fas fa-euro-sign
   id: economics
   description: Poverty Lines & HDI, Agriculture & Development, Economic Growth, Inequality, Unemployment, Disability, Youth, Elders, Happiness, Social Business, Macroeconomic models, Macroeconomic Crisis, Public Economics, Education, Trade, Monetary Policies, Fiscal Policies, Globalization & Development, Microfinance, Health
-- name: ICT
+- name: ICT & Innovation
   img: ICT
   icon: fas fa-mouse-pointer
   id: ict

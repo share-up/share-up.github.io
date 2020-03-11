@@ -3,9 +3,14 @@
   img:  JoaoMatos.png
   position: President
   slogan: Best at making things happen!
-  age: 20
-  faculty: FEUP
-  course: BioEng.
-  network: ICT
+  traits:
+    - name: Age
+      value: 20
+    - name: Faculty
+      value: FEUP
+    - name: Course
+      value: BioEng
+    - name: Network
+      value: ICT & Innovation
   linkedin: https://www.linkedin.com/in/joao-mat0s/
 ---

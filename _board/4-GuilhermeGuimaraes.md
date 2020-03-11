@@ -3,9 +3,14 @@
   img:  GuilhermeGuimaraes.png
   position: Treasurer
   slogan: Best at avoiding bankruptcy!
-  age: 21
-  faculty: FEP
-  course: Economics
-  network: Global Economics
+  traits:
+    - name: Age
+      value: 21
+    - name: Faculty
+      value: FEP
+    - name: Course
+      value: Economics
+    - name: Network
+      value: Global Economics
   linkedin: https://www.linkedin.com/in/guilhermedqg/
 ---

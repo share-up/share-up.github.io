@@ -428,17 +428,17 @@ flip card
 
 /* networks */
 
-.netwrok-card {
+.network-card {
     border-radius: 10px;
 }
 
-.netwrok-card-body {
+.network-card-body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 0.5s;
 }
 
-.netwrok-card-body:hover {
+.network-card-body:hover {
     color: var(--color-primary);
     background-color: white;
 }

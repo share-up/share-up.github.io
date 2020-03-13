@@ -30,8 +30,10 @@ markdown: kramdown
 permalink: pretty
 
 
-collections:
+collections_dir: my_collections
+collections:  
   board:
+  members:
 
 
 
@@ -40,114 +42,60 @@ networks:
 - name: Energy
   img: EN
   icon: fas fa-lightbulb
-  id: energy
+  id: EN
   description: Solar, Wind, Biomass, Renewable Energy, Global Agencies & International Policies, Nuclear, CO2 Emission, Grid, Transmission & Distribution, Coal Energy, Environment, Hydropower
+  nm-name: Diogo Valente
   nm-img: DiogoPolonia.png
   nm-quote: "Do not put off till tomorrow what you can do after tomorrow"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/diogovalentepolonia/
-  members:
-  - name: Armando Ferreira
-    img: ArmandoFerreira.png
-    linkedin: https://www.linkedin.com/in/armando-milhais-ferreira-411450185
-  - name: Pedro Gomes
-    img: pedroerthal.png
-    linkedin: https://www.linkedin.com/in/pedroerthal/
-  - name: Rita Sobreira
-    img: RitaSobreira.png
-    linkedin: https://www.linkedin.com/in/rita-sobreira-0666bb1a3/
-  - name:	Leonardo Alves	
-    img:	leonardo_alves.png	
-    linkedin:	https://www.linkedin.com/in/leonardo-alves-38b27a13a/
-  - name:	Tomás Baptista 	
-    img:	TomasBaptista.png	
-    linkedin:	
 - name: Industry
   img: IND
   icon: fas fa-industry
-  id: industry
+  id: IND
   description: Logistics & Supply Chain, Lean Management, Manufacturing Processes, Quality Management, Heavy Industry, Industrial Policies, Machinery, Infrastructure
+  nm-name: Beatriz Gomes
   nm-img: BeatrizGomes.png
   nm-quote: "Life is short. Smile while you still have teeth"
   nm-description:
-  nm-linkedin: linkedin.com/in/beatriz-gomes-5b7019171
-  members:
-  - name:	Leonardo Santos	
-    img:	Leonardo-Santos.png	
-    linkedin:	https://www.linkedin.com/in/leonardo-teixeira-dos-santos-59689a177/
-  - name:	Maria Botelho	
-    img:	MariaBotelho.png 	
-    linkedin:	www.linkedin.com/in/maria-pereira-botelho
-  - name:	Margarida Pinheiro	
-    img:	MargaridaPinheiro.png	
-    linkedin:	
-  - name:	Luis Antunes	
-    img:	LuisAntunes.png	
-    linkedin:	https://www.linkedin.com/in/luis-antunes/
+  nm-linkedin:  https://www.linkedin.com/in/beatriz-gomes-5b7019171
 - name: Business Strategy
   img: BS
   icon: fas fa-briefcase
-  id: business
+  id: BS
   description: Marketing, Mergers & Acquisition , Human Resources , Strategy & Planning , Expansion, Organisation , Operational Effectiveness , Pricing
   nm-img: JoaoNeves.png
+  nm-name: João Neves
   nm-quote: "If anything is possible is it possible for something to be impossible?"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/jo%C3%A3o-neves-881005187/
-  members:
-  - name:	Inês Bastos	
-    img:	InesBastos.png
-    linkedin:	https://www.linkedin.com/in/in%C3%AAs-bastos-b80790194/
-  - name:	Paula Leite	
-    img: PaulaLeite.png
-    linkedin:	https://www.linkedin.com/in/paula-leite-85b9501a3/
-  - name:	Daniel Cardoso	
-    img: DanielCardoso.png
-    linkedin:	https://www.linkedin.com/in/daniel-vasconcelos-cardoso-1a689517b/
 - name: Global Economics
   img: GE
   icon: fas fa-euro-sign
-  id: economics
+  id: GE
   description: Poverty Lines & HDI, Agriculture & Development, Economic Growth, Inequality, Unemployment, Disability, Youth, Elders, Happiness, Social Business, Macroeconomic models, Macroeconomic Crisis, Public Economics, Education, Trade, Monetary Policies, Fiscal Policies, Globalization & Development, Microfinance, Health
   nm-img: SaraCosta.png
+  nm-name: Sara Costa
   nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/sara-costa-685356195/
-  members:
-  - name:	João Costa 	
-    img:	jony_costa.png	
-    linkedin:	https://www.linkedin.com/in/jo%C3%A3o-costa-594467176/
-  - name:	Pedro Freitas	
-    img:	PedroFreitas.png	
-    linkedin:	https://www.linkedin.com/in/pedro-freitas-5b56a2185/
-  - name:	Miguel Ferreira	
-    img:	MiguelFerreira.png	
-    linkedin:	https://www.linkedin.com/in/miguelroqueferreira/
 - name: ICT & Innovation
   img: ICT
   icon: fas fa-mouse-pointer
-  id: ict
+  id: ICT
   description: Telecom Networks, IT Industry , Software Industry , Internet Industry , Rural ICT, Social Networks, Telecom Vendors , Venture Capital & Innovation Funds , R&D Models , Social Entrepreneurship , Government Policies, Intellectual Property Rights, Entrepreneurs Sociology , Scientific Parks & Incubators , Universities
   nm-img: MargaridaSa.png
+  nm-name: Margarida Sá
   nm-quote: "I'm not moody, I just haven't drank coffee today"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/margarida-pinto-sá/
-  members:
-  - name:	Rúben Pinto	
-    img:	RubenPinto.png	
-    linkedin:	www.linkedin.com/in/carlosrubenalmeidapinto
-  - name:	Rúben Araújo	
-    img:	RubenAraujo.png	
-    linkedin:	
 - name: Mobility
   img: MOB
   icon: fas fa-paper-plane
-  id: mobility
+  id: MOB
   description: Urban Logistics, Sustainable Logistics, Electric Mobility, Autonomous Driving, Public Transit, Mobility Policies, Walking and cycling, Shared Mobility, Traffic management, Infrastructure,Safety
   nm-img: VictorPetisco.png
+  nm-name: Victor Petisco
   nm-quote: "Bad decisions make good stories"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/victor-v-petisco-5baa83163
-  members:
-  - name:	Igor Mazin	
-    img:	IgorMazin.png	
-    linkedin:	https://www.linkedin.com/in/igor-mazin/

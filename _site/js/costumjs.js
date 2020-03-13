@@ -39,8 +39,8 @@ $(window).ready(function() {
 });
 
 $(window).on("load", function() {
-    setTimeout(loaderFade, 100);
-
+    /* setTimeout(loaderFade, 100); */
+    loaderFade()
     function loaderFade() {
         $('.loader-wrapper').fadeOut("slow");
     }

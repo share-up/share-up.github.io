@@ -91,7 +91,7 @@ networks:
   nm-linkedin: https://www.linkedin.com/in/margarida-pinto-sá/
 - name: Mobility
   img: MOB
-  icon: fas fa-paper-plane
+  icon: icon-mob-icon
   id: MOB
   description: Urban Logistics, Sustainable Logistics, Electric Mobility, Autonomous Driving, Public Transit, Mobility Policies, Walking and cycling, Shared Mobility, Traffic management, Infrastructure,Safety
   nm-img: VictorPetisco.png

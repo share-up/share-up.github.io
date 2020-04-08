@@ -1,5 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark navbar-inverse" id="nav-top">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{site.url}}">
         <img src="../img/share-up_logo.png" width="100px" height="34px" class="d-inline-block align-top" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,22 +12,25 @@
                 <a class="nav-link disabled" href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Students <span class="sr-only">(current)</span></a>
             </li> -->
             <li class="nav-item ">
-                <a class="nav-link " href="#about">About</a>
+                <a class="nav-link " href="{{site.url}}/#about">About</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="#students">Students</a>
+                <a class="nav-link " href="{{site.url}}/#students">Students</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="#scopes">Services</a>
+                <a class="nav-link " href="{{site.url}}/#scopes">Services</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="#team">Team</a>
+                <a class="nav-link " href="{{site.url}}/#team">Team</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="#recruitment">Recruitment</a>
+                <a class="nav-link " href="{{site.url}}/#recruitment">Recruitment</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link " href="#contact">Contact</a>
+                <a class="nav-link disabled" href="{{site.url}}/#partners">Partners</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="{{site.url}}/#contact">Contact</a>
             </li>
             <!--             <li class="nav-item disabled">
                 <a class="nav-link disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,7 +47,8 @@
                 <a class="nav-link disabled" href="#">News</a>
             </li>  -->
         </ul>
-        <a class="nav-link " href="https://www.share-share.org/"><button class="btn btn-outline-success my-2 my-sm-0" id="nav-global" type="submit">Global</button></a>
+        <a class="nav-link " href="/news/"><button class="btn btn-outline-success my-2 my-sm-0 btn-nav-page" id="nav-news" type="submit">News</button></a>
+        <a class="nav-link " href="https://www.share-share.org/"><button class="btn btn-outline-success my-2 my-sm-0 btn-nav-page" id="nav-global" type="submit">Global</button></a>
 
 
         <!-- 

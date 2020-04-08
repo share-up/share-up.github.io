@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+{% include head.html %}
+
+<body data-spy="scroll" data-target="#nav-top" class="bg-light">
+    {% include nav.html %}
+    <section class="py-4" id="news">
+        <div class="container">
+            {% for post in site.posts %}
+            <div class="row">
+                <div class="col">
+                    <article class="post">
+
+                        <a class="post-thumbnail" style="background-image: url( ../img/posts/press/{{post.thumbnail}} )" href="{{post.permalink}}"></a>
+
+                        <div class="post-content">
+                            <h2 class="post-title"><a href="{{post.permalink}}">{{post.title}}</a></h2>
+                            <p>{{post.description}}</p>
+                            <span class="post-date">{{post.news-date}}</span>
+                            <span class="post-words">- {{post.read-time}} minute read</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+</body>
+
+</html>

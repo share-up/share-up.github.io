@@ -1,8 +1,13 @@
+
+/* Fade in Fade out slides */
 $(document).ready(function() {
     var TIME_PER_WORD = 2000;
     var TIME_PER_SLIDE = 4000;
     var slides = $(".slide"),
         numPages = slides ? slides.length : 0;
+    var partnerSlides = $(".slide-partners"),
+        numPartners = partnerSlides ? partnerSlides.length : 0;
+    x = -1;
     i = -1;
     function nextSlide() {
         if (i >= 0)
@@ -16,9 +21,22 @@ $(document).ready(function() {
         $(slides[i]).addClass('overlay');
         $(slides[i]).addClass('elementToFadeInDown');
 
+        $(partnerSlides[x]).removeClass('currentSlide');
+        $(partnerSlides[x]).removeClass('overlay');
+        $(partnerSlides[x]).removeClass('elementToFadeOutDown');
+        $(partnerSlides[x]).removeClass('elementToFadeInDown');
+        x = ++x % numPartners;
+
+        $(partnerSlides[x]).addClass('currentSlide');
+        $(partnerSlides[x]).addClass('overlay');
+        $(partnerSlides[x]).addClass('elementToFadeInDown');
+
+
         setTimeout(function() {
             $(slides[i]).removeClass('elementToFadeInDown');
             $(slides[i]).addClass('elementToFadeOutDown');
+            $(partnerSlides[x]).removeClass('elementToFadeInDown');
+            $(partnerSlides[x]).addClass('elementToFadeOutDown');
         }, TIME_PER_WORD);
         setTimeout(nextSlide, TIME_PER_SLIDE);
 
@@ -27,6 +45,8 @@ $(document).ready(function() {
     nextSlide();
 
 });
+
+/* Fade in Fade out slides */
 
 
 $(window).resize(function() {
@@ -71,4 +91,6 @@ $(document).ready(function() {
     });
 });
 
-/* Carousel */
+/* Partners */
+
+/* Partners */

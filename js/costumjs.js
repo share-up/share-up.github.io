@@ -66,7 +66,8 @@ $(window).on("load", function() {
     }
 });
 
-$(document).ready(function() {
+/* smooth scrolling for every browser - crashes  link to new page */
+/* $(document).ready(function() {
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
 
@@ -90,7 +91,7 @@ $(document).ready(function() {
         } // End if
     });
 });
-
+ */
 /* Partners */
 
 /* Partners */

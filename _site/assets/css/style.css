@@ -169,7 +169,7 @@ section h3.section-subheading {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../../img/share/map.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -192,7 +192,7 @@ section#contact {
 
 .header {
     height: 100vh;
-    background-image: url(../img/share_bg.png);
+    background-image: url(../../img/share/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

@@ -12,7 +12,7 @@
                     <div class="page-content">
                         <div class="page-cover-image">
                             <figure>
-                                <img class="page-image" src="../img/posts/press/{{page.thumbnail}}" alt="{{title}}">
+                                <img class="page-image" src="../img/press_reviews/images/{{page.thumbnail}}" alt="{{title}}">
                             </figure>
                         </div>
                         <!-- End Page Cover Image -->
@@ -24,7 +24,7 @@
                             <div class="text-muted press-content px-5 py-3">{{page.content}}</div>
                             <div class=" video-wrapper">
                                 <video class="press-video" controls>
-                                        <source src="../assets/{{page.video}}" type="video/mp4">
+                                        <source src="../img/press_reviews/videos/{{page.video}}" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                             <!-- End Footer -->
                             <div class="page-tag">
                                 {% for hashtag in page.hashtags %}
-                                <a href="/flexible-jekyll/tags#Holidays" class="tag">&#35; {{hashtag.word}}</a> {% endfor %}
+                                <a href="" class="tag">&#35; {{hashtag.word}}</a> {% endfor %}
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 ---
 networkID: MOB
 name: Rodrigo Castro
-img: RodrigoCastro.png
+img: RodrigoCastro.jpg
 linkedin: 
-------------------
+---

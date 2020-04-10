@@ -1,6 +1,6 @@
 ---
 networkID: IND
 name: Margarida Pinheiro	
-img: MargaridaPinheiro.png	
+img: MargaridaPinheiro.jpg	
 linkedin:	
 ---

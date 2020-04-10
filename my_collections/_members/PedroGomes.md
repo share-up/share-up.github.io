@@ -1,6 +1,6 @@
 ---
 networkID: EN
 name: Pedro Gomes
-img: pedroerthal.png
+img: PedroErthal.jpg
 linkedin: https://www.linkedin.com/in/pedroerthal/
 ---

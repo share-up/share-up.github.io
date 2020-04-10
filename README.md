@@ -22,4 +22,3 @@ To change the images go to /img folder and choose the folder you want to change.
 
 ## Copywrite
 [ShARE UP](https://share-up.pt)
-[Diogo Valente] (https://www.linkedin.com/in/diogovalentepolonia/)

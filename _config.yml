@@ -45,7 +45,7 @@ networks:
   id: EN
   description: Solar, Wind, Biomass, Renewable Energy, Global Agencies & International Policies, Nuclear, CO2 Emission, Grid, Transmission & Distribution, Coal Energy, Environment, Hydropower
   nm-name: Diogo Valente
-  nm-img: DiogoPolonia.png
+  nm-img: DiogoPolonia.jpg
   nm-quote: "Do not put off till tomorrow what you can do after tomorrow"
   nm-description:
   nm-linkedin: https://www.linkedin.com/in/diogovalentepolonia/
@@ -55,7 +55,7 @@ networks:
   id: IND
   description: Logistics & Supply Chain, Lean Management, Manufacturing Processes, Quality Management, Heavy Industry, Industrial Policies, Machinery, Infrastructure
   nm-name: Beatriz Gomes
-  nm-img: BeatrizGomes.png
+  nm-img: BeatrizGomes.jpg
   nm-quote: "Life is short. Smile while you still have teeth"
   nm-description:
   nm-linkedin:  https://www.linkedin.com/in/beatriz-gomes-5b7019171
@@ -64,7 +64,7 @@ networks:
   icon: fas fa-briefcase
   id: BS
   description: Marketing, Mergers & Acquisition , Human Resources , Strategy & Planning , Expansion, Organisation , Operational Effectiveness , Pricing
-  nm-img: JoaoNeves.png
+  nm-img: JoaoNeves.jpg
   nm-name: João Neves
   nm-quote: "If anything is possible is it possible for something to be impossible?"
   nm-description:
@@ -74,7 +74,7 @@ networks:
   icon: fas fa-euro-sign
   id: GE
   description: Poverty Lines & HDI, Agriculture & Development, Economic Growth, Inequality, Unemployment, Disability, Youth, Elders, Happiness, Social Business, Macroeconomic models, Macroeconomic Crisis, Public Economics, Education, Trade, Monetary Policies, Fiscal Policies, Globalization & Development, Microfinance, Health
-  nm-img: SaraCosta.png
+  nm-img: SaraCosta.jpg
   nm-name: Sara Costa
   nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
   nm-description:
@@ -84,7 +84,7 @@ networks:
   icon: fas fa-mouse-pointer
   id: ICT
   description: Telecom Networks, IT Industry , Software Industry , Internet Industry , Rural ICT, Social Networks, Telecom Vendors , Venture Capital & Innovation Funds , R&D Models , Social Entrepreneurship , Government Policies, Intellectual Property Rights, Entrepreneurs Sociology , Scientific Parks & Incubators , Universities
-  nm-img: MargaridaSa.png
+  nm-img: MargaridaSa.jpg
   nm-name: Margarida Sá
   nm-quote: "I'm not moody, I just haven't drank coffee today"
   nm-description:
@@ -94,7 +94,7 @@ networks:
   icon: icon-mob-icon
   id: MOB
   description: Urban Logistics, Sustainable Logistics, Electric Mobility, Autonomous Driving, Public Transit, Mobility Policies, Walking and cycling, Shared Mobility, Traffic management, Infrastructure,Safety
-  nm-img: VictorPetisco.png
+  nm-img: VictorPetisco.jpg
   nm-name: Victor Petisco
   nm-quote: "Bad decisions make good stories"
   nm-description:

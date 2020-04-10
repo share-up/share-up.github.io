@@ -1,6 +1,6 @@
 ---
   name: Guilherme Guimarães
-  img:  GuilhermeGuimaraes.png
+  img:  GuilhermeGuimaraes.jpg
   position: Treasurer
   slogan: Best at avoiding bankruptcy!
   traits:

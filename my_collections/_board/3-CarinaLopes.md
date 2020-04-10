@@ -1,6 +1,6 @@
 ---
 name: Carina Lopes
-img:  CarinaLopes.png
+img:  CarinaLopes.jpg
 position: External Vice-President
 slogan: Best at spamming social media!
 traits:

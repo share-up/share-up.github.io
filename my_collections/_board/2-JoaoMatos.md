@@ -1,6 +1,6 @@
 ---
   name: João Matos
-  img:  JoaoMatos.png
+  img:  JoaoMatos.jpg
   position: President
   slogan: Best at making things happen!
   traits:

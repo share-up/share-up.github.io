@@ -1,6 +1,6 @@
 ---
   name: Alexandra Leite
-  img:  AlexandraLeite.png
+  img:  AlexandraLeite.jpg
   position: Internal Vice-President
   slogan: Best at motivationg the team!
   traits:

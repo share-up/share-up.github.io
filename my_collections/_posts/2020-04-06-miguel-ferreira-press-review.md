@@ -1,6 +1,6 @@
 ---
 layout: outdated-press
-permalink: "/miguel-ferreira-press-review-outdated/"
+permalink: "/miguel-ferreira-press-review/"
 title:  "Global Data Access for Solving Rare Disease: A Health Economics Value Framework"
 thumbnail: "MiguelFerreia_GlobalEconomy_Confirmed_Press.jpg"
 video: "MiguelFerreira_Global_Economics_Comfirmed_Member.mp4"

@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: outdated-press
 permalink: "/ruben-pinto-press-review/"
 title:  "Charge batteries through skin with permanent implantable device concept"
 thumbnail: "RubenPinto.jpg"

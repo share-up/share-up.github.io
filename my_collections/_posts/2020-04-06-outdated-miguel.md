@@ -1,9 +1,9 @@
 ---
-layout: press
-permalink: "/miguel-ferreira-press-review/"
+layout: outdated-press
+permalink: "/miguel-ferreira-press-review-outdated/"
 title:  "Global Data Access for Solving Rare Disease: A Health Economics Value Framework"
 thumbnail: "MiguelFerreia_GlobalEconomy_Confirmed_Press.jpg"
-video: "https://www.youtube.com/embed/66aQjKqrqPA"
+video: "MiguelFerreira_Global_Economics_Comfirmed_Member.mp4"
 news-date: "26 Feb 2020"
 source: "World Economic Forum"
 link: "https://www.weforum.org/reports/global-access-for-solving-rare-disease-a-health-economics-value-framework"

@@ -22,8 +22,10 @@
                                 <div class="page-date font-weight-normal">{{page.news-date}} - by <a href="{{page.linkedin}}" class="text-share press-link" target="_blank">{{page.author}}</a> </div>
                             </header>
                             <div class="text-muted press-content px-lg-5 py-3">{{page.content}}</div>
-                            <div class="iframe-container mx-auto">
-                                <iframe src="{{page.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class=" video-wrapper">
+                                <video class="press-video" controls>
+                                        <source src="../img/press_reviews/videos/{{page.video}}" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                         <p class="text-muted text-center px-5">Source: <a href={{page.link}} class="text-share press-link" target="_blank">{{page.source}}</a> - All rigths reserved their original owner</p>

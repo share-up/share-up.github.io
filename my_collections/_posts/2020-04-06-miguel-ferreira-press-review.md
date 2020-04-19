@@ -3,7 +3,7 @@ layout: press
 permalink: "/miguel-ferreira-press-review/"
 title:  "Global Data Access for Solving Rare Disease: A Health Economics Value Framework"
 thumbnail: "MiguelFerreia_GlobalEconomy_Confirmed_Press.jpg"
-video: "MiguelFerreira_Global_Economics_Comfirmed_Member.mp4"
+video: "<iframe width="560" height="315" src="https://www.youtube.com/embed/66aQjKqrqPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
 news-date: "26 Feb 2020"
 source: "World Economic Forum"
 link: "https://www.weforum.org/reports/global-access-for-solving-rare-disease-a-health-economics-value-framework"

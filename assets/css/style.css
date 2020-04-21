@@ -722,24 +722,6 @@ a.newer-posts:hover {
     color: black;
 }
 
-.video-wrapper {
-    max-width: 750px;
-    display: block;
-    margin: 0 auto;
-}
-
-.press-video {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    transition: box-shadow 0.3s ease-in-out
-}
-
-.press-video:hover {
-    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.377);
-}
-
 .iframe-container {
     position: relative;
     max-width: 750px;

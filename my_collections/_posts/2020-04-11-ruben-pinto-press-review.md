@@ -1,9 +1,9 @@
 ---
-layout: outdated-press
+layout: press
 permalink: "/ruben-pinto-press-review/"
 title:  "Charge batteries through skin with permanent implantable device concept"
 thumbnail: "RubenPinto.jpg"
-video: "RubenPinto_ICT&Innovation_Confirmed_Press.mp4"
+video: "https://www.youtube.com/embed/A-yzqzQ8uks"
 news-date: "9 March 2020"
 source: "Tech Xplore"
 link: "https://techxplore.com/news/2020-03-batteries-skin-permanent-implantable-device.html"

@@ -2,7 +2,7 @@
 layout: press
 permalink: "/rúben-araújo-press-review/"
 title:  "‘Creative’ AlphaZero leads way for chess computers and, maybe, science"
-thumbnail: "RubenAraujo.jpg"
+thumbnail: "RubenAraujo.JPG"
 video: "https://www.youtube.com/embed/G2yTHH7xhLs"
 news-date: "11/12/2018"
 source: "TheGuardian"

@@ -2,7 +2,7 @@
 layout: press
 permalink: "/tiago-almeida-press-review/"
 title:  "Why AI Is Transforming The Banking Industry"
-thumbnail: "TiagoAlmeida.jpg"
+thumbnail: "TiagoAlmeida.jpeg"
 video: "https://www.youtube.com/embed/tJGFOTh4dT4"
 news-date: "05/04/2020"
 source: "Forbes"

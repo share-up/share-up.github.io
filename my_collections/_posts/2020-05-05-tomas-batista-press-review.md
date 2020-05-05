@@ -2,7 +2,7 @@
 layout: press
 permalink: "/tomas-baptista-press-review/"
 title:  "A drop of water generates 140V power, lighting up 100 LED bulbs"
-thumbnail: "TomasBaptista.jpg"
+thumbnail: "TomasBaptista.jpeg"
 video: "https://www.youtube.com/embed/-JKYXmsYFuY"
 news-date: "05/02/2020"
 source: "Science Daily"

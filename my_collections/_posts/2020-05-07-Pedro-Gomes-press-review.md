@@ -1,3 +1,4 @@
+---
 layout: press
 permalink: "/pedro-gomes-press-review/"
 title:  "Bladeless Wind Turbines – Less Efficient in the Conversion of Captured Wind Power Into Electrical Energy"

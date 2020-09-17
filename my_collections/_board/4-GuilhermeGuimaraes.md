@@ -11,6 +11,6 @@
     - name: Course
       value: Economics
     - name: Network
-      value: Global Economics
+      value: Global Economy
   linkedin: https://www.linkedin.com/in/guilhermedqg/
 ---

@@ -5,18 +5,19 @@
                 <!-- Section heading -->
                 <h1 class="section-heading text-share">Networks</h1>
                 <!-- Section description -->
-                <h3 class="section-subheading text-light">The rest of the members work in one of these 6 different networks</h3>
+                <h3 class="section-subheading text-light">The rest of the members work in one of these 3 different networks</h3>
             </div>
         </div>
         <!-- Grid row -->
         <div class="row text-center">
             <!-- Grid column -->
             {% for network in site.networks %}
-            <div class="col-lg-4 col-md-6 col-sm-6" data-toggle="modal" data-target="#{{network.id}}">
+            <div class="col-lg-4 col-md-6 col-sm-6" data-toggle="modal" data-target="#{{network.network_id}}">
                 <div class="card network-card mb-3">
                     <div class="row no-gutters">
-                        <div class="col-3 bg-white align-self-center">
-                            <i class="{{network.icon}} fa-2x text-share"></i>
+                        <div class="col-3 bg-white align-self-center rounded">
+                            <!-- <i class="{{network.icon}} fa-2x text-share"></i> -->
+                            <img src="../img/networks/{{network.img}}.png" alt="Network Icon" class=" img-fluid w-50">
                         </div>
                         <div class=" col-9 bg-dark-light network-card-body">
                             <div class="card-body">
@@ -35,11 +36,12 @@
 
     {% for network in site.networks %}
     <!-- modal -->
-    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="{{network.id}}">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="{{network.network_id}}">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-dark ">
-                    <i class="{{network.icon}} fa-lg text-share align-self-center"></i>
+                    <!-- <i class="{{network.icon}} fa-lg text-share align-self-center"></i> -->
+                    <img src="../img/networks/{{network.img}}.png" alt="Network Icon" class=" img-fluid modal-network-img">
                     <h5 class="modal-title font-weight-normal text-light ml-2 align-self-center">{{network.name}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -65,14 +67,14 @@
                             <hr>
                             <div class="row">
                                 <div class="col">
-                                    {{network.description}}
+                                    {{network.content}}
                                 </div>
                             </div>
                             <hr>
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        {% for member in site.members %} {% if member.networkID == network.id %}
+                        {% for member in site.members %} {% if member.networkID == network.network_id %}
                         <div class="col-lg-2 col-md-3 col-sm-4">
                             <div class=" member-img-cropper mx-auto">
                                 <img src=" ../img/members/{{member.img}} " alt=" " class="member-img ">

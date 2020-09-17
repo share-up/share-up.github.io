@@ -1,0 +1,54 @@
+<div class="separator-before bg-light"></div>
+<section class="bg-dark" id="services">
+    <div class="container text-center text-light">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-heading text-share">ShARE Services</h2>
+                <h3 class="section-subheading text-light">If you are a company, startup or NGO, work with our members to make you even better at it! </h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Cards -->
+            {% for service in site.services %}
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card scopes bg-secondary border-secondary pointer" data-toggle="modal" data-target="#{{service.service-id}}">
+                    <img src="../img/services/{{service.img}}.png" class="card-img-top mx-auto mt-4" alt="Service Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{service.name}}</h5>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col text-center ">
+                <a href="https://forms.gle/ch9UnTtmuCTJCPKz9" target="_blank" class="btn btn-share mt-4 p-2">Apply for ShARE projects!</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals -->
+    {% for service in site.services %}
+    <div class="modal fade" id="{{service.service-id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-share" id="exampleModalCenterTitle">{{service.name}}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body px-5">
+                    <p class="text-center text-muted"><em>"{{service.description}}"</em></p>
+                    {{service.content}}
+                </div>
+                <div class="modal-footer">
+                    <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary">Let's Meet!<a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+<div class="separator-after bg-dark"></div>

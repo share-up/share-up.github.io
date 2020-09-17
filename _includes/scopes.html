@@ -1,250 +1,45 @@
-<section class="bg-dark" id="scopes">
+<section class="bg-white" id="scopes">
     <div class="container text-center text-light">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="section-heading text-share">ShARE Services</h2>
-                <h3 class="section-subheading text-light">If you are a company, startup or NGO, work with our members to make you even better at it! </h3>
+                <h2 class="section-heading text-dark">ShARE Scopes</h2>
+                <h3 class="section-subheading text-muted">We are focused on strategic consulting! Take a lool at some examples of the main problem areas we tackle</h3>
             </div>
         </div>
         <div class="row">
             <!-- Cards -->
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-businessModel">
-                    <img src="../img/scopes/businessModel.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Business Model</h5>
-                    </div>
-                </div>
+            {% for scope in site.scopes %}
+            <div class="col-md-6 mb-5">
+                <img src="../img/scopes/{{scope.img}}.png" class="img-fluid scope-img mx-auto" alt="Scope Image">
+                <h4 class="text-dark my-2">{{scope.name}}</h4>
+                <p class="text-muted"><em>{{scope.description}}</em></p>
+                <button type="button" data-toggle="modal" data-target="#{{scope.scope-id}}" class=" btn btn-dark ">Find out more!</button>
             </div>
-            <div class="col-md-4 ">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-expansionPlan">
-                    <img src="../img/scopes/expansionPlan.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Expansion Plan</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-partnershipPlan">
-                    <img src="../img/scopes/partnershipPlan.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Partnership Plan</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-marketingPlan">
-                    <img src="../img/scopes/marketingPlan.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Marketing Plan</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-societalIssue">
-                    <img src="../img/scopes/societalIssue.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title ">Societal Issue</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-financialAnalysis">
-                    <img src="../img/scopes/financialAnalysis.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Financial Analysis</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-supplyChain">
-                    <img src="../img/scopes/supplyChain.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Supply Chain</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-globalDataCollection">
-                    <img src="../img/scopes/globalDataCollection.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Global Data Collection</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card scopes bg-secondary border-secondary" data-toggle="modal" data-target="#modal-businessLaunching">
-                    <img src="../img/scopes/businessLaunching.png" class="card-img-top mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Business Launching</h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Cards -->
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <a href="https://forms.gle/ch9UnTtmuCTJCPKz9" target="_blank" class="btn btn-share mt-4 p-2">Apply for ShARE projects!</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
 
     <!-- Modals -->
-    <div class="modal fade" id="modal-businessModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title text-share" id="exampleModalCenterTitle">Business Model</h5>
+    {% for scope in site.scopes %}
+    <div class="modal fade " id="{{scope.scope-id}}" tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+        <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header text-center ">
+                    <h5 class="modal-title text-share " id="exampleModalCenterTitle ">{{scope.name}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                <span aria-hidden="true ">&times;</span>
+              </button>
                 </div>
-                <div class="modal-body">Get market insights, work on unsolved issues, and take your business to the next level </div>
-                <div class="modal-footer">
-                    <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary">Let's Meet!<a>
+                <div class="modal-body px-5 ">
+                    <p class="text-center text-muted "><em>{{scope.description}}</em></p>
+                    {{scope.content}}
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="modal fade" id="modal-expansionPlan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Expansion Plan</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">Study with us the possibility of an expansion </div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-partnershipPlan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Partnership Plan</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">Get an innovative perspective on your partnerships plan</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-marketingPlan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Marketing Plan</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">Boost your business with a solid communication with your clients and stakeholders</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-societalIssue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Societal Issue</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">ShARE can help you having more success in your mission</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-financialAnalysis" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Financial Analysis</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">Looking for a financial study on strategic plan or for financial sustainability?</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-supplyChain" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Supply Chain</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">Further develop and optimize your processes and logistics!</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-globalDataCollection" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Global Data Colecction</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">ShARE is present in 15 countries and is able to manage cross country project</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-businessLaunching" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h5 class="modal-title text-share" id="exampleModalCenterTitle">Business Launching</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-            </div>
-            <div class="modal-body">We can help you turning your innovative ideas into reality</div>
-            <div class="modal-footer">
-                <a target="_blank" href="https://forms.gle/ch9UnTtmuCTJCPKz9" type="button" class="btn btn-secondary" >Let's Meet!<a>
-            </div>
-        </div>
-    </div>
-</div>
+    {% endfor %}
 </section>

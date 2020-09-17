@@ -2,7 +2,7 @@
   name: Beatriz Gomes
   img:  BeatrizGomes.jpg
   position: Internal Vice-President
-  slogan: Best at motivationg the team!
+  slogan: Best at motivating the team!
   traits:
     - name: Age
       value: 20

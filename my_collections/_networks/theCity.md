@@ -13,4 +13,6 @@ ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 ct-linkedin: https://www.linkedin.com/in/sara-costa-685356195/
 ---
 
-Smart Cities, Industry, Supply Chain, Modern Consumer, Logistics & Supply Chain, Lean Management, Manufacturing Processes, Quality Management, Solar, Wind, Biomass, Renewable Energy, Global Agencies & International Policies, Nuclear, CO2 Emission, Gridß
+Industry <code>&#124;</code> Process <code>&#124;</code> Energy <code>&#124;</code> Environment <code>&#124;</code> Urbanism
+
+The city's clients work in the industrial, hospitality or urban sectors. all the way from factories, warehouses, restaurants, hotels to mobility, logistical and everyday-product companies

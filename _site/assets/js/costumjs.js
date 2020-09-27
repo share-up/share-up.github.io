@@ -59,12 +59,12 @@ $(window).ready(function() {
 });
 
 $(window).on("load", function() {
-    /* setTimeout(loaderFade, 100); */
+    setTimeout(loaderFade, 100);
     loaderFade()
     function loaderFade() {
         $('.loader-wrapper').fadeOut("slow");
-    }
-});
+    } 
+}); 
 
 /* smooth scrolling for every browser - crashes  link to new page */
 /* $(document).ready(function() {

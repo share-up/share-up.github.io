@@ -1,20 +1,17 @@
 ---
 name: Business Launcher
-description: Take your idea to the next level
+description: Have an innovative idea? Take it to the next level!
 service-id: business-launcher
 img: businessLauncher
 ---
 ##### What is it?
-Pro bono project designed to help entrepreneurs, with an innovative idea, assess viability, create a business model and plan for the company first steps, in a pre-incubator experience
+ShARE-UP students intend to present a plan for turning an innovative idea into a viable business, by creating a model for the company first steps!
 
-##### What do we offer?
-* ShARE plan for turning an idea into a viable business
+##### What can we offer?
+* A team of 2 in-training members and a Senior project lead (Network Manager)
+* A ShARE-issued plan/ solution for your business
 * Post project follow-up
-* Wait list for Senior projects
-* Team of 2 in-training member and a Senior project lead (chief consultant)
-* IHP networking session
-
-
+* Presence in a networking session
 
 ##### What do we ask?
 * Project responsible to be available for the time period, to assist the students

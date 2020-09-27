@@ -13,4 +13,6 @@ ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 ct-linkedin: https://www.linkedin.com/in/sara-costa-685356195/
 ---
 
-Telecom Networks, IT Industry , Software Industry , Internet Industry , Rural ICT, Social Networks, Telecom Vendors , Venture Capital & Innovation Funds , R&D Models , Social Entrepreneurship , Government Policies, Intellectual Property Rights, Entrepreneurs Sociology , Scientific Parks & Incubators , Universities
+IoT <code>&#124;</code> AI <code>&#124;</code> Cybersecurity <code>&#124;</code> Communication Tech <code>&#124;</code> Scientific Innovation
+
+Technology is the broadest Network when it comes to companies it works with. It covers all companies which have technology as their differentiating factor or main product/ service

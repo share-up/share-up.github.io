@@ -13,4 +13,6 @@ ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 ct-linkedin: https://www.linkedin.com/in/sara-costa-685356195/
 ---
 
-Poverty Lines & HDI, Agriculture & Development, Economic Growth, Inequality, Unemployment, Disability, Youth, Elders, Happiness, Social Business, Macroeconomic models, Macroeconomic Crisis, Public Economics, Education, Trade, Monetary Policies, Fiscal Policies, Globalization & Development, Microfinance, Health
+Political Economy <code>&#124;</code> Business Innovation <code>&#124;</code> Social Develpment <code>&#124;</code> Education <code>&#124;</code> Globalization
+
+Global Economy members will work with governmental or non-govermental organizations (NGOs), other student associations or educational companies. But they can also work with consulting or financial firms and even fintech companies

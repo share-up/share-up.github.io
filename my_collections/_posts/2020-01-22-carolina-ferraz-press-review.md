@@ -9,7 +9,7 @@ source: "Forbes"
 link: "https://www.forbes.com/sites/jenniferdungs/2020/11/13/how-covid-19-is-changing-mobility-in-a-way-no-technology-ever-could/"
 read-time: "2"
 author: "Carolina Ferraz"
-linkedin:"https://www.linkedin.com/in/carolina-ferraz-3693141a3/"
+linkedin: "https://www.linkedin.com/in/carolina-ferraz-3693141a3/"
 hashtags:
 - word: "Mobility"
 - word: "COVID-19"

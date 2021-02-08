@@ -3,11 +3,11 @@ name: Global Economy
 img: globalEconomy
 icon: fas fa-euro-sign
 network_id: econ
-nm-img: BeatrizSeabra.jpg
+nm-img: BeatrizSeabra.png
 nm-name: Beatriz Seabra
 nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 nm-linkedin: https://www.linkedin.com/in/beatriz-seabra-pereira-a5135b195/
-ct-img: JulianaGoncalves.jpg
+ct-img: JulianaGoncalves.png
 ct-name: Juliana Gonçalves
 ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 ct-linkedin: https://www.linkedin.com/in/juliana-rodrigues-profile/

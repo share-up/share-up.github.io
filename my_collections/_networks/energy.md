@@ -3,11 +3,11 @@ name: Energy
 img: energy
 icon: fas fa-euro-sign
 network_id: energy
-nm-img: IsabelGouveia.jpg
+nm-img: IsabelGouveia.png
 nm-name: Isabel Gouveia
 nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 nm-linkedin: https://www.linkedin.com/in/isabelgouveiaa/
-ct-img: AnaLuisaCoelho.jpg
+ct-img: AnaLuisaCoelho.png
 ct-name: Ana Luisa Coelho
 ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 ct-linkedin: https://www.linkedin.com/in/analuisacoelho13/

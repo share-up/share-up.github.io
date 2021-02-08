@@ -3,7 +3,7 @@ name: The City
 img: theCity
 icon: fas fa-euro-sign
 network_id: city
-nm-img: Maria Botelho.png
+nm-img: MariaBotelho.png
 nm-name: Maria Pereira Botelho
 nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
 nm-linkedin: https://www.linkedin.com/in/maria-pereira-botelho/

@@ -3,16 +3,16 @@ name: The City
 img: theCity
 icon: fas fa-euro-sign
 network_id: city
-nm-img: LeonardoAlves.jpg
-nm-name: Leonard Alves
+nm-img: Maria Botelho.jpg
+nm-name: Maria Pereira Botelho
 nm-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
-nm-linkedin: https://www.linkedin.com/in/leonardo-alves-38b27a13a/
-ct-img: MariaBotelho.jpg
-ct-name: Maria Botelho
+nm-linkedin: https://www.linkedin.com/in/maria-pereira-botelho/
+ct-img: MarianaGoncalves.jpg
+ct-name: Mariana Gonçalves
 ct-quote: "Rule n. 1, there are no rules. Rule n. 2, see above"
-ct-linkedin: https://www.linkedin.com/in/sara-costa-685356195/
+ct-linkedin: https://www.linkedin.com/in/marianagonçalves/
 ---
 
-Industry <code>&#124;</code> Process <code>&#124;</code> Energy <code>&#124;</code> Environment <code>&#124;</code> Urbanism
+Industry Innovation <code>&#124;</code> Logistics <code>&#124;</code> Urban Planning <code>&#124;</code> Process Innovation <code>&#124;</code> Mobility Innovation <code>&#124;</code> Urban Services
 
 The city's clients work in the industrial, hospitality or urban sectors. all the way from factories, warehouses, restaurants, hotels to mobility, logistical and everyday-product companies

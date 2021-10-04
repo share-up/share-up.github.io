@@ -3,10 +3,6 @@
 	Linkedin: https://www.linkedin.com/in/diogovalentepolonia/
 	From: Porto, Potugal
 
-
-/* SITE */
-	Last Design update: 16 September 2020
-    /* TOOLS */
-	Jekyll: https://jekyllrb.com/
-	Bootstrap: https://getbootstrap.com/
-    
+	Developer: Miguel Lopes
+	Linkedin: https://www.linkedin.com/in/miguelazevedolopes/
+	From: Porto, Potugal

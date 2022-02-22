@@ -388,6 +388,39 @@ a.button2:hover {
 
 .form-container {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contacts-container{
+    width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-info{
+    align-self:flex-start;
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+}
+
+.contacts-info h3{
+    font-weight: 600;
+}
+
+.contacts-info img{
+    height: 40px;
+    align-self: center;
+    margin-right: 20px;
+}
+.form-container .row{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
 .currentSlide {
@@ -522,11 +555,20 @@ footer {
   align-self: center;
 } */
 .footer-container {
+    align-self: center;
+    text-align: center;
   padding-bottom: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   font-size: 12px;
   color: #4d4d4d;
+}
+
+
+.footer-container div{
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container a {

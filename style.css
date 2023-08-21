@@ -635,12 +635,12 @@ footer {
 }
 #meet-the-team {
   background-color: #00c782;
-  background-image: url("images/team/gala-dinner-1.jpg");
+  background-image: url("images/team/teamphoto.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-blend-mode: normal;
-  height: 100vh;
+  height: 100vh;  
   display: flex;
   flex-direction: column;
   justify-content: center;

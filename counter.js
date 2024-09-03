@@ -30,7 +30,7 @@
                 if ($this.data('counterup-nums').length) {
                     setTimeout($this.data('counterup-func'), settings.delay);
                 } else {
-                    $this.text(target + '+'); 
+                    $this.text(target + '+');
                     delete $this.data('counterup-nums');
                     $this.data('counterup-nums', null);
                     $this.data('counterup-func', null);
@@ -38,7 +38,19 @@
             };
 
             $this.data('counterup-func', f);
-            setTimeout($this.data('counterup-func'), settings.delay);
+
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        setTimeout($this.data('counterup-func'), settings.delay);
+                        observer.unobserve($this[0]); 
+                    }
+                });
+            }, {
+                threshold: 0.7
+            });
+
+            observer.observe(this);
         });
     };
 })(jQuery);
@@ -46,6 +58,6 @@
 $(document).ready(function() {
     $('.counterUp').counterUp({
         delay: 5,
-        time: 3000 
+        time: 3000
     });
 });

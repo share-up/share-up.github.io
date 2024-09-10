@@ -67,7 +67,7 @@ a {
 
 #home {
   height: 100vh;
-  background: url("images/homepage/background.png");
+  background: url("images/homepage/homePage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1111,4 +1111,146 @@ footer {
   .counter-content {
       font-size: 24px;
   }
+}
+
+#growth-path {
+  background-color: #00c782;
+  background-image: url("images/growth-path/growthPath.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#growth-path img {
+  width: 60px;
+}
+
+#growth-path a {
+  align-self: center;
+}
+
+#intro {
+  color: white;
+  align-self: center;
+  width: 100%;
+  padding-top: 0;
+}
+
+#intro h1 {
+  font-size: 80px;
+}
+
+#intro h3 {
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: 600;
+  font-size: 19.5px;
+}
+
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 60px;
+  color: #4d4d4d;
+}
+
+.section p {
+  color: #666;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.display-item {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.display-item:hover {
+  transform: scale(1.05);
+}
+
+.display-item h3 {
+  font-size: 22px;
+  color: #00c782;
+}
+
+.display-item p {
+  font-size: 16px;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+#junior-member h1 {
+  color:#4d4d4d;
+}
+
+#junior-member .description p{
+  color:#666;
+}
+
+#confirmed-member h1 {
+  color:white;
+}
+
+#confirmed-member .description p{
+  color:white;
+}
+
+#senior-member h1 { 
+  color:#4d4d4d;
+}
+
+#senior-member .description p{
+  color:#666;
+  padding-bottom: 4em;
+}
+
+#junior-member {
+  background-color: #ffffff;
+}
+
+#confirmed-member {
+  background-color: #4d4d4d;
+}
+
+#senior-member {
+  background-color: #B7E6CA;
+}
+
+#confirmed-member .display-item {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(183, 230, 202, 0.26) ;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#growth-path-footer {
+  background-color: #B7E6CA;
+}
+
+#growth-path-footer a{
+  color:#000000;
 }

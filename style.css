@@ -1257,3 +1257,81 @@ footer {
 #contact-us{
   color:#00c782;
 }
+
+.credits-page {
+  background-color: #4d4d4d;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #B7E6CA;
+}
+
+.credits-page h1 {
+  font-size: 4.5em;
+  margin-top: 30px;
+  color: #B7E6CA;
+}
+
+.credits-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 4em;
+}
+
+.credits-page .developer {
+  margin: 0 20px;
+}
+
+.credits-page .developer img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  cursor: pointer;
+}
+
+.credits-page .developer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.credits-page .developer a {
+  display: block;
+  margin-top: 10px;
+  text-decoration:bold;
+  font-size: 24px;
+  color: #B7E6CA;
+  font-weight:bold;
+}
+
+.back-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 10; 
+}
+
+.back-container p {
+  margin-right: 10px;
+  font-size: 20px;
+  margin-left: 0.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.back-arrow {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #B7E6CA;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: scale(1.2);
+  font-size: 35px; 
+}

@@ -67,7 +67,7 @@ a {
 
 #home {
   height: 100vh;
-  background: url("images/homepage/Site-2.png");
+  background: url("images/homepage/aboutUs.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -156,17 +156,17 @@ a.button2 {
 
 #about-us a.button1:hover {
   color: #4d4d4d;
-  background-color: #ddd;
+  background-color: #B7E6CA;
 }
 
 #recruitment-phases a.button1:hover {
   color: #4d4d4d;
-  background-color: #ddd;
+  background-color: #B7E6CA;
 }
 
 a.button2:hover {
   color: #4d4d4d;
-  background-color: #ddd;
+  background-color: #B7E6CA;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
@@ -215,7 +215,6 @@ a.button2:hover {
 }
 
 .description h1 {
-  font-family: "Roboto Condensed", sans-serif;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -633,11 +632,10 @@ footer {
 }
 #intro h1 {
   font-size: 80px;
-  font-family: "Open Sans", sans-serif;
 }
 #meet-the-team {
   background-color: #00c782;
-  background-image: url("images/team/teamphoto.png");
+  background-image: url("images/team/team.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -1254,4 +1252,8 @@ footer {
 
 #growth-path-footer a{
   color:#000000;
+}
+
+#contact-us{
+  color:#00c782;
 }

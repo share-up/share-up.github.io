@@ -67,7 +67,7 @@ a {
 
 #home {
   height: 100vh;
-  background: url("images/homepage/homePage.png");
+  background: url("images/homepage/Site-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -99,17 +99,18 @@ a {
 }
 
 #button-container {
-  padding-top: 60px;
+  padding-top: 3em;
   display: flex;
   justify-content: center;
+  margin-bottom: 5em;
 }
 
 a.button1 {
   display: inline-block;
   padding: 0.85em 1.4em;
-  border: 0.2em solid #4d4d4d;
+  border: 0.2em solid #00c782;
   margin: 0 0.3em 0.3em 0;
-  border-radius: 0;
+  border-radius: 2.5px;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: bold;
@@ -118,15 +119,15 @@ a.button1 {
   text-align: center;
   transition: all 0.2s;
   width: 150px;
-  background-color: #4d4d4d;
+  background-color: #00c782;
   -webkit-box-shadow: 5px 4px 18px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 4px 18px 0px rgba(0, 0, 0, 0.1);
 }
 
 a.button1:hover {
   color: #4d4d4d;
-  background-color: #fff;
-  border: 0.2em solid #fff;
+  background-color: #B7E6CA;
+  border: 0.2em solid #B7E6CA;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
@@ -779,7 +780,7 @@ footer {
 
 #recruitment-on {
   background-color: #00c782;
-  background-image: url("images/recruitment/recruitment-on.png");
+  background-image: url("images/recruitment/recruitmentPhoto.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

@@ -17,7 +17,7 @@ a {
   top: 0px;
   width: 100%;
   height: 90px;
-  background-color: #4d4d4d;
+  background-color: #ffffff;
   font-size: 0.9rem;
   font-weight: bold;
   z-index: 999;
@@ -36,7 +36,7 @@ a {
 }
 
 .navbar-element a {
-  color: #fff;
+  color: #000000;
 }
 
 .navbar-element a:hover {

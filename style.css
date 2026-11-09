@@ -67,7 +67,7 @@ a {
 
 #home {
   height: 100vh;
-  background: url("images/homepage/aboutUs.png");
+  background: url("images/team/photos/banner/merch.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -636,7 +636,7 @@ footer {
 }
 #meet-the-team {
   background-color: #00c782;
-  background-image: url("images/team/team.png");
+  background-image: url("images/team/photos/banner/grupo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -662,13 +662,17 @@ footer {
 }
 
 .display-item .profile-image {
-  height: 180px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  border-radius: 50%;
+    display: block;
+    height: 180px;
+    width: auto;
+    margin: 20px auto 5px auto;
+    border-radius: 50%;
+    align-self: center;
+}
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .display-item .profile-image:hover {
@@ -693,12 +697,20 @@ footer {
 }
 
 .card-row {
-  display: flex;
-  padding-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    padding-left: 0;
 }
 
 .card-row div {
-  width: 50%;
+    width: auto;
+    flex: 0 0 auto;
+}
+
+.card-row h4 {
+    white-space: nowrap;
 }
 
 .person-card .card-info h4 {
@@ -781,7 +793,7 @@ footer {
 
 #recruitment-on {
   background-color: #00c782;
-  background-image: url("images/recruitment/recruitmentPhoto.png");
+  background-image: url("images/team/photos/banner/recrutamento.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1339,3 +1351,13 @@ footer {
   font-size: 35px; 
 }
 
+.person-card img.profile-image {
+    display: block !important;
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="ShARE-UP is the University of Porto's branch of the international organization ShARE. We provide pro bono junior consulting services in multiple areas.">
+
+    <title>ShARE-UP | Partners</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logos/icon_bolinhas.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* PARTNERS SECTION */
+
+        #partners {
+            width: 100%;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px 100px;
+            margin-bottom: 60px;
+            box-sizing: border-box;
+
+        }
+
+        #partners-slide-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 60px auto 0;
+
+            display: grid;
+            grid-template-columns: 50px 1fr 50px;
+            align-items: center;
+            justify-items: center;
+            gap: 30px;
+        }
+
+        .partner-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .partner-image {
+            width: 320px !important;
+            height: 200px !important;
+            object-fit: contain;
+            border-radius: 0 !important;
+            display: block;
+        }
+
+        .partner-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #444;
+            margin: 0;
+        }
+
+        .partner-arrow {
+            background: none;
+            border: none;
+            color: #555;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .partner-arrow:hover {
+            color: #00bf80;
+        }
+
+        /* MOBILE VERSION */
+
+        @media (max-width: 600px) {
+
+            #partners {
+                min-height: 500px;
+                padding: 40px 10px;
+            }
+
+            #partners-slide-container {
+                grid-template-columns: 35px 1fr 35px;
+                gap: 10px;
+                margin-top: 40px;
+            }
+
+            .partner-image {
+                width: 220px !important;
+                height: 140px !important;
+                object-fit: contain;
+                border-radius: 0 !important;
+
+            }
+
+            .partner-name {
+                font-size: 18px;
+            }
+
+            .partner-arrow {
+                font-size: 22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <div id="navbar">
+
+        <div id="navbar-responsive">
+
+            <a href="index.html" id="homepage-link">
+                <img id="logo" src="images/logos/logo-website.png" alt="share-up-junior-consulting-logo">
+            </a>
+
+            <img id="navbar-icon" src="images/icons/navbar.png" alt="">
+
+        </div>
+
+        <div class="navbar-links">
+
+            <div class="navbar-element">
+                <a href="index.html#about-us">ABOUT US</a>
+            </div>
+
+            <div class="navbar-element">
+                <a href="team.html">THE TEAM</a>
+            </div>
+
+            <div class="navbar-element">
+                <a href="recruitment.html">RECRUITMENT</a>
+            </div>
+
+            <div class="navbar-element">
+                <a href="growthpath.html">GROWTH PATH</a>
+            </div>
+            <div class="navbar-element">
+                <a href="partnership.html">PARTNERSHIPS</a>
+            </div>
+
+            <div class="navbar-element">
+                <a href="contacts.html">CONTACT US</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PARTNERS SECTION -->
+
+    <div class="section" id="partners">
+
+        <div class="description">
+
+            <h1>OUR PARTNERS</h1>
+
+            <p>
+                Meet the people and organizations who support our journey.
+            </p>
+
+        </div>
+
+
+        <!-- PARTNER CAROUSEL -->
+
+        <div id="partners-slide-container">
+
+            <!-- PREVIOUS PARTNER -->
+
+            <button class="partner-arrow" id="prev-partner" aria-label="Previous partner">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <!-- PARTNER INFORMATION -->
+
+            <div class="partner-slide">
+
+                <img class="partner-image" src="" alt="Partner">
+
+                <h3 class="partner-name"></h3>
+
+            </div>
+
+
+            <!-- NEXT PARTNER -->
+
+            <button class="partner-arrow" id="next-partner" aria-label="Next partner">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // PARTNERS LIST
+
+        const partners = [
+
+            {
+                name: "FEP- Faculdade de Economia da Universidade do Porto",
+                image: "images/team/photos/Partners/FEP.png"
+            },
+
+            {
+                name: "IPDJ-Instituto Desporto Juventude",
+                image: "images/team/photos/Partners/ipdj.png"
+            },
+
+            {
+                name: "PwC",
+                image: "images/team/photos/Partners/PwC.webp"
+            }
+
+        ];
+
+
+        // CURRENT PARTNER
+
+        let currentPartner = 0;
+
+
+        // HTML ELEMENTS
+
+        const partnerImage = document.querySelector(".partner-image");
+        const partnerName = document.querySelector(".partner-name");
+
+        const previousButton = document.getElementById("prev-partner");
+        const nextButton = document.getElementById("next-partner");
+
+
+        // DISPLAY PARTNER
+
+        function showPartner(index) {
+
+            const partner = partners[index];
+
+            partnerImage.src = partner.image;
+            partnerImage.alt = partner.name;
+
+            partnerName.textContent = partner.name;
+
+        }
+
+
+        // PREVIOUS PARTNER
+
+        previousButton.addEventListener("click", function () {
+
+            currentPartner = (currentPartner - 1 + partners.length) % partners.length;
+
+            showPartner(currentPartner);
+
+        });
+
+
+        // NEXT PARTNER
+
+        nextButton.addEventListener("click", function () {
+
+            currentPartner = (currentPartner + 1) % partners.length;
+
+            showPartner(currentPartner);
+
+        });
+
+
+        // INITIALIZE CAROUSEL
+
+        if (partners.length > 0) {
+
+            showPartner(currentPartner);
+
+        }
+
+    </script>
+         
+    <footer>
+        
+        <style>
+            #social-links img {
+                width: 3em; 
+                height: 3em; 
+                margin: 0 1em;
+            }
+        </style>
+        <div id="social-links">
+            <a class="social-media-link" href="https://www.facebook.com/SHAREUniversityPorto" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons/facebook.png" alt="Facebook">
+            </a>
+            <a class="social-media-link" href="https://www.instagram.com/share_uporto/" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons/instagram-green.png" alt="Instagram">
+            </a>
+            <a class="social-media-link" href="https://www.linkedin.com/company/share-university-of-porto" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a class="social-media-link" href="mailto:share.univporto@gmail.com?subject=Contact%20ShARE-UP" target="_blank" rel="noopener noreferrer">
+                <img src="images/icons/email-green.png" alt="Email">
+            </a>
+        </div>
+        <div class="footer-container">
+            <h3>Rua Dr Roberto Frias S/N, 4200-465 Porto</h3>
+            <div>
+                <h3>Copyright © ShARE-UP 2026.</h3>
+                <a href="credits.html"><h3>Credits</h3></a>
+            </div>
+        </div>
+    </footer>
+    <script src="team.js"></script>
+
+</body>
+
+</html>
